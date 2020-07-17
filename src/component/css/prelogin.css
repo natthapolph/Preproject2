@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?cs=srgb&dl=pexels-259280.jpg&fm=jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: aliceblue;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  border: 1px red;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
