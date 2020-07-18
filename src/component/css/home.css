@@ -1,0 +1,45 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.nav-c > ul {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-c {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 80px;
+  background-color: blueviolet;
+  align-items: center;
+}
+
+.nac-f,
+.nav-l {
+  display: flex;
+  background-color: red;
+}
+
+.nav-c > ul a {
+  color: #333;
+}
+.nac-f li,
+.nav-l li {
+  margin-right: 2rem;
+}
+
+.section-c {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.sidebar-c ul {
+  list-style: none;
+}
+
+.sidebar-c ul li {
+  padding: 1rem;
+  background: #ccc;
+}

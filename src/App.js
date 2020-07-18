@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Login from "./component/Login";
-import preLogin from "./component/preLogin";
+import Home from "./component/Home";
 import auth from "./firebase";
-import "./App.css";
 
 function App() {
   const [session, setSession] = useState({
@@ -26,24 +25,12 @@ function App() {
     };
   }, []);
 
-  const headleLogout = () => {
-    auth.signOut().then((response) => {
-      setSession({
-        isLogin: false,
-        currentUser: null,
-        errorMessage: null,
-      });
-    });
-  };
-
   return (
     <div className="App">
       {session.isLogin ? (
         <header>
-          <button type="button" onClick={headleLogout}>
-            logout
-          </button>
-          <preLogin></preLogin>
+          {" "}
+          <Home setSession={setSession} />{" "}
         </header>
       ) : (
         <Login setSession={setSession} />
