@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.renameOnType": true,
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "editor.codeActionsOnSave": null
+}
